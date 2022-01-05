@@ -1,24 +1,29 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 import {
   BrowserRouter as Router,
   Route,
-  Routes
-} from "react-router-dom";
-import './App.css';
+  Routes,
+  Link
+} from 'react-router-dom';
 
-function App() {
-   render() {
-     return(
-      <Router>
-        <div>
-          <Routes>
-            <Route exact path="/" element= {<Home/>}>
-          </Routes>
-        </div>
-      </Router>
-     );
-   }
+// components
+import MenuPage from "./components/MenuPage";
+
+class App extends Component {
+  render() {
+    return (
+     <Router>
+       <div>
+        <Routes>
+         <Route path="/" element={<LandingPage />}/>
+         <Route path="/MainMenu" element={<MenuPage />}/>
+      
+         </Routes>
+       </div>
+     </Router>
+    );
+  }
 }
 
 export default App;

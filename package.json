@@ -1,0 +1,21 @@
+{
+  "name": "pos-upgraded-frontend",
+  "version": "1.0.0",
+  "description": "This is the frontend-half of the UNIT-3 team project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DazingPluto/POS-upgraded-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DazingPluto/POS-upgraded-frontend/issues"
+  },
+  "homepage": "https://github.com/DazingPluto/POS-upgraded-frontend#readme"
+}
