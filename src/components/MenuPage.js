@@ -9,6 +9,12 @@ class MenuPage extends Component {
         super(props);
     }
 
+    // this is for the ghost display thingy
+
+    displayGhost() {
+        
+    }
+
     ///// YOOOO THIS IS THE CHANGE!!!!!!!!~~~~~~~~~~??????????ß
     render() {
         return (
