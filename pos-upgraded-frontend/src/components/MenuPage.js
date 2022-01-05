@@ -14,7 +14,7 @@ class MenuPage extends Component {
                 <nav class="navbar is-info">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="#">
-                            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28"></img>
                         </a>
                         <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                             <span></span>
@@ -47,7 +47,7 @@ class MenuPage extends Component {
                                     <a class="navbar-item" href="blog.html">
                                         Blog
                                     </a>
-                                    <hr class="navbar-divider">
+                                    <hr class="navbar-divider"></hr>
                                         <a class="navbar-item" href="search.html">
                                             Search
                                         </a>
@@ -122,13 +122,13 @@ class MenuPage extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content"></div>
                         <div class="tab-pane" id="pane-1">
                             <figure>
-                                <img src="https://source.unsplash.com/0_xMuEbpFAQ/400x400" alt="💯" class="cent">
+                                <img src="https://source.unsplash.com/0_xMuEbpFAQ/400x400" alt="💯" class="cent"></img>
                             </figure>
                             <figure>
-                                <img src="https://source.unsplash.com/wPMvPMD9KBI/800x600" alt="💯" class="cent">
+                                <img src="https://source.unsplash.com/wPMvPMD9KBI/800x600" alt="💯" class="cent"></img>
                             </figure>
                         </div>
                         <div class="tab-pane" id="pane-3">
@@ -144,7 +144,7 @@ class MenuPage extends Component {
                                                     <div class="content">
                                                         <p>
                                                             <strong>Dominic Ipsum</strong>
-                                                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                                            <br></br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -157,7 +157,7 @@ class MenuPage extends Component {
                                                     <div class="content">
                                                         <p>
                                                             <strong>Cassie Ipsum</strong>
-                                                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                                            <br></br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -172,7 +172,7 @@ class MenuPage extends Component {
                                                     <div class="content">
                                                         <p>
                                                             <strong>Avery Ipsum</strong>
-                                                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                                                            <br></br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -185,7 +185,7 @@ class MenuPage extends Component {
                                                     <div class="content">
                                                         <p>
                                                             <strong>io Ipsum</strong>
-                                                            <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis. ╳
+                                                            <br></br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis. ╳
                                                         </p>
                                                     </div>
                                                 </div>
@@ -286,16 +286,7 @@ class MenuPage extends Component {
                                 <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
                                 <h5>Fifth level</h5>
                                 <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
-                                <figure>
-                                    <img src="https://bulma.io/images/placeholders/256x256.png" alt="💯">
-                                        <img src="https://bulma.io/images/placeholders/256x256.png" alt="💯">
-                                            <figcaption>
-                                                Figure 1: Some beautiful placeholders
-                                            </figcaption>
-                                        </figure>
-                                        <h6>Sixth level</h6>
-                                        <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
-                                    </div>
+                                
                             </div>
                         </div>
                 </section>
