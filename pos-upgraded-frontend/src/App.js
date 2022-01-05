@@ -9,6 +9,7 @@ import {
 
 // components
 import MenuPage from "./components/MenuPage";
+import LandingPage from "./components/LandingPage";
 
 class App extends Component {
   render() {
@@ -18,6 +19,8 @@ class App extends Component {
         <Routes>
          <Route path="/" element={<LandingPage />}/>
          <Route path="/MainMenu" element={<MenuPage />}/>
+         <Route path="/GhostBlogShowPage" element={<GhostBlog />}/>
+         <Route path="/CardsBlogShowPage" element={<CardsBlog />} />
       
          </Routes>
        </div>
