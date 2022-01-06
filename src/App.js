@@ -20,7 +20,7 @@ class App extends Component {
         <Routes>
          <Route path="/" element={<LandingPage />}/>
          <Route path="/MainMenu" element={<MenuPage />}/>
-        <Route path="/ghost" element={<Ghost />}/>
+         <Route path="/ghost" element={<Ghost />}/>
          </Routes>
        </div>
      </Router>
