@@ -19,7 +19,7 @@ class App extends Component {
         <Routes>
          <Route path="/" element={<LandingPage />}/>
          <Route path="/MainMenu" element={<MenuPage />}/>
-      
+        
          </Routes>
        </div>
      </Router>
