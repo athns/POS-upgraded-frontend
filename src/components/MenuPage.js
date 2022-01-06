@@ -2,9 +2,17 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './MenuPage.css';
 
+import Ghost from './Ghost';
+
 class MenuPage extends Component {
     constructor(props) {
         super(props);
+    }
+
+    // this is for the ghost display thingy
+
+    displayGhost() {
+        
     }
 
     ///// YOOOO THIS IS THE CHANGE!!!!!!!!~~~~~~~~~~??????????ß
