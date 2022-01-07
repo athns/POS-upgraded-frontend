@@ -12,6 +12,7 @@ import MenuPage from "./components/MenuPage";
 import LandingPage from "./components/LandingPage";
 import Ghost from "./components/Ghost"
 import OptionsContainer from "./components/OptionsContainer";
+import Options from "./components/Options"
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
          <Route path="/MainMenu" element={<MenuPage />}/>
          <Route path="/ghost" element={<Ghost />}/>
          <Route path="/options" element={<OptionsContainer />}/>
+         <Route path="/option" element={<Options/>} />
          </Routes>
        </div>
      </Router>

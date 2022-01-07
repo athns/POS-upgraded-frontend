@@ -6,6 +6,8 @@ class OptionsContainer extends Component {
     constructor(props) {
         super(props);
     }
+
+
     render() {
         return (
             <div>
@@ -16,7 +18,15 @@ class OptionsContainer extends Component {
 
                 <form action='/MainMenu' method='get'>
                     {/* there should be a display options function that maps the buttons that show up in here */}
-
+                    <div className="radio">
+                        <label>
+                            {/* the filler should have the options value in there instead */}
+                            <div type="radio" value="filler" >
+                                {/* put the thing */}
+                                option 1
+                            </div>
+                        </label>
+                    </div>
                 </form>
 
                 {/* It should Map all the options it has for a certain menu item and go through all option stuff  */}

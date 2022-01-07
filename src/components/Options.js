@@ -10,13 +10,21 @@ class Options extends Component {
         return (
             <>
                 {/* this should get repeated over and over till the menu has no more */}
-                <label>
-                    {/* the filler should have the options value in there instead */}
-                    <div className='radio' value="filler">
-                        {/* should have the option prop in here i ask sydney today how the api looks */}
-                        option 1
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-12">
+                            <form>
+                                <div className="radio">
+                                    <label>
+                                        <input type="radio" value="option1" checked={false} />
+                                        {/* change this to what ever the option is  */}
+                                        Option 1
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </label>
+                </div>
             </>
 
         )
