@@ -23,7 +23,6 @@ class App extends Component {
          <Route path="/" element={<LandingPage />}/>
          <Route path="/MainMenu" element={<MenuPage />}/>
          <Route path="/ghost" element={<Ghost />}/>
-         <Route path="/options" element={<OptionsContainer />}/>
          <Route path="/option" element={<Options/>} />
          </Routes>
        </div>

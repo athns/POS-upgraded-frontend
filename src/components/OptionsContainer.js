@@ -11,8 +11,6 @@ class OptionsContainer extends Component {
     render() {
         return (
             <div>
-                {/* This should get the menu item from the menu page  */}
-                <h1> Menu Item Name </h1>
 
                 {/* i put the form here to make it make sense lol ask me its 7 am and i didnt sleep */}
 
@@ -20,11 +18,9 @@ class OptionsContainer extends Component {
                     {/* there should be a display options function that maps the buttons that show up in here */}
                     <div className="radio">
                         <label>
-                            {/* the filler should have the options value in there instead */}
-                            <div type="radio" value="filler" >
-                                {/* put the thing */}
-                                option 1
-                            </div>
+                            <input type="radio" value="option1" checked={false} />
+                            {/* change this to what ever the option is  */}
+                            Option 1
                         </label>
                     </div>
                 </form>

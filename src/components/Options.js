@@ -18,6 +18,30 @@ class Options extends Component {
                                     <label>
                                         <input type="radio" value="option1" checked={false} />
                                         {/* change this to what ever the option is  */}
+                                         Option 1
+                                    </label>
+                                </div>
+                                <br />
+                                <div className="radio">
+                                    <label>
+                                        <input type="radio" value="option1" checked={false} />
+                                        {/* change this to what ever the option is  */}
+                                        Option 1
+                                    </label>
+                                </div>
+                                <br />
+                                <div className="radio">
+                                    <label>
+                                        <input type="radio" value="option1" checked={false} />
+                                        {/* change this to what ever the option is  */}
+                                        Option 1
+                                    </label>
+                                </div>
+                                <br />
+                                <div className="radio">
+                                    <label>
+                                        <input type="radio" value="option1" checked={false} />
+                                        {/* change this to what ever the option is  */}
                                         Option 1
                                     </label>
                                 </div>
