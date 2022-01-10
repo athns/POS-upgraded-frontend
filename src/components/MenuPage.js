@@ -11,15 +11,20 @@ function addTableNumber() {
 
 const data = [
     {
-      catagory: 'Drink'
+      catagory: 'Drink',
+       link: 'http://localhost:3000/drinkOptions'
     },
     {
-        catagory: 'Sandwich'
+        catagory: 'Sandwich',
+        link: 'http://localhost:3000/sandwichOptions'
     },
     {
-        catagory: 'Desert'
-    },
+        catagory: 'Desert',
+        link: 'http://localhost:3000/desertOptions'
+    }
 ]
+
+
 
 
 const displayCharacters = data.map((a, idx) =>{
@@ -272,6 +277,7 @@ class MenuPage extends Component {
                             </div>
                         </div>
                     </div>
+                    
                     
                     {displayCharacters}
                 </section>
