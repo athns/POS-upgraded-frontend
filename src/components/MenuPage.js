@@ -56,8 +56,8 @@ const displayCharacters = data.map((a, idx) =>{
                                         <div className="column is-5 featured-content va">
                                             <div>
                                                 <h3 className="heading post-category">Category Name</h3>
-                                                <h1 className="title post-title">Blog Posts Template</h1>
-                                                <p className="post-excerpt">This template is based off of the official default blog template created by the fine folks over at <a href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog platform, I highly recommend checking them out!</p>
+                                                <h1 className="title post-title">Menu Item!</h1>
+                                                <p className="post-excerpt">Description! here is some really gud food! eat up! <a href="https://ghost.io">Ghost</a>. </p>
                                                 <br />
                                                 <a href="#" className="button is-primary">Read More</a>
                                             </div>
@@ -291,40 +291,7 @@ class MenuPage extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="tab-pane is-active" id="pane-2">
-                        <div className="content">
-                            <div className="columns featured-post is-multiline">
-                                <div className="column is-12 post">
-                                    <article className="columns featured">
-                                        <div className="column is-7 post-img ">
-                                            <img src="https://cdn.emk.dev/templates/featured-image.png" alt="" />
-                                        </div>
-                                        <div className="column is-5 featured-content va">
-                                            <div>
-                                                <h3 className="heading post-category">Category Name</h3>
-                                                <h1 className="title post-title">Blog Posts Template</h1>
-                                                <p className="post-excerpt">This template is based off of the official default blog template created by the fine folks over at <a href="https://ghost.io">Ghost</a>. If you are looking for a fully featured blog platform, I highly recommend checking them out!</p>
-                                                <br />
-                                                <a href="#" className="button is-primary">Read More</a>
-                                            </div>
-
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='menuFlex'>
-                        <a className='menuItem'>
-                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
-                        </a>
-                        <a className='menuItem'>
-                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
-                        </a>
-                        <a className='menuItem'>
-                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
-                        </a>
-                    </div>
+                    
                     {displayCharacters}
                 </section>
                 {<script src="../js/bulma.js"></script>}
