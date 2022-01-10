@@ -37,14 +37,14 @@
     flex-direction: column;
     justify-content: center;
     background-color: #aa5440;
-
 }
+
 .navbar-item {
     background-color: #aa5440;
 }
 .res-name {
     font-size: 60px;
-    color: #D36135;
+    color: #e6764a;
     font-family: 'Caveat', cursive;
     text-align: center;
     letter-spacing: 4px;
