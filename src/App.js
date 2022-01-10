@@ -22,6 +22,9 @@ import LandingPage from "./components/LandingPage";
 import Ghost from "./components/Ghost";
 import Login from './components/Login';
 import DrinkOptions from "./components/DrinkOptions";
+import SandwichOptions from "./components/SandwichOptions";
+import DesertOptions from "./components/DesertOptions";
+import PlaceOrderPage from "./components/AdminSubmitPage";
 
 
 const PrivateRoute = ({ children }) => {
@@ -97,7 +100,10 @@ function Apps() {
 
           <Route path="/ghost" element={<Ghost />} />
           <Route path="/drinkOptions" element={<DrinkOptions />} />
-          <Route path='/signup' element={Signup} />
+          <Route path="/sandwichOptions" element={<SandwichOptions />} />
+          <Route path="/desertOptions" element={<DesertOptions />} />
+          <Route path="/PlacedOrderPage" element={<PlaceOrderPage />} />
+          <Route path='/signup' element={<Signup />} />
           <Route
             path="/login"
             element={

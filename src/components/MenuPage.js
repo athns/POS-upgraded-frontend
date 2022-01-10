@@ -4,6 +4,10 @@ import './MenuPage.css';
 
 
 import Ghost from './Ghost';
+let currentSeat = 1;
+function addTableNumber() {
+    
+}
 
 const data = [
     {

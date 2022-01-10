@@ -19,86 +19,35 @@ class SandwichOptions extends Component {
                 <div className='optionsContainer'>
                     <form>
                         <div className='menuOption'>
-                            <h3>Option 1</h3>
+                            <h3>Side of Fries?</h3>
                             <ul className='center'>
-                                <li className='center'><button type='radio'>Text</button></li>
-                                <li className='center'><button type='radio'>Text</button></li>
-                                <li className='center'><button type='radio'>Text</button></li>
-                                <li className='center'><button type='radio'>Text</button></li>
-                                <li className='center'><button type='radio'>Text</button></li>
-                                <li className='center'><button type='radio'>Text</button></li>
-                                <li className='center'><button type='radio'>Text</button></li>
-                                <li className='center'><button type='radio'>Text</button></li>
+                                <li className='center'><button type='radio'>Small Fries</button></li>
+                                <li className='center'><button type='radio'>Medium Fries</button></li>
+                                <li className='center'><button type='radio'>Large Fries</button></li>
+                                <li className='center'><button type='radio'>Small Chilli Cheese Fry</button></li>
+                                <li className='center'><button type='radio'>Medium Chilli Cheese Fry</button></li>
+                                <li className='center'><button type='radio'>Large Chilli Cheese Fry</button></li>
                             </ul>
                             <div className='menuOption'>
-                                <h3>Option 2</h3>
+                                <h3>Side Soup</h3>
                                 <ul className='center'>
-                                    <li className='center'><button type='radio'>Text</button></li>
-                                    <li className='center'><button type='radio'>Text</button></li>
-                                    <li className='center'><button type='radio'>Text</button></li>
-                                    <li className='center'><button type='radio'>Text</button></li>
-                                    <li className='center'><button type='radio'>Text</button></li>
-                                    <li className='center'><button type='radio'>Text</button></li>
-                                    <li className='center'><button type='radio'>Text</button></li>
-                                    <li className='center'><button type='radio'>Text</button></li>
+                                    <li className='center'><button type='radio'>Tomatoe Soup</button></li>
+                                    <li className='center'><button type='radio'>Chicken Gnochi</button></li>
+                                    <li className='center'><button type='radio'>Beef Stew</button></li>
+                                    <li className='center'><button type='radio'>Soup Of the Day</button></li>
                                 </ul>
                                 <div className='menuOption'>
-                                    <h3>Option 3</h3>
+                                    <h3>Soup Size</h3>
                                     <ul className='center'>
-                                        <li className='center'><button type='radio'>Text</button></li>
-                                        <li className='center'><button type='radio'>Text</button></li>
-                                        <li className='center'><button type='radio'>Text</button></li>
-                                        <li className='center'><button type='radio'>Text</button></li>
-                                        <li className='center'><button type='radio'>Text</button></li>
-                                        <li className='center'><button type='radio'>Text</button></li>
-                                        <li className='center'><button type='radio'>Text</button></li>
-                                        <li className='center'><button type='radio'>Text</button></li>
+                                        <li className='center'><button type='radio'>Half Bowl</button></li>
+                                        <li className='center'><button type='radio'>Full Bowl</button></li>
                                     </ul>
-                                    <div className='menuOption'>
-                                    <h3>Option 4</h3>
-                                        <ul className='center'>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                            <li className='center'><button type='radio'>Text</button></li>
-                                        </ul>
-                                        <div className='menuOption'>
-                                            <h3>Option 5</h3>
-                                            <ul className='center'>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                                <li className='center'><button type='radio'>Text</button></li>
-                                            </ul>
-                                            <div className='menuOption'>
-                                                <h3>Option 6</h3>
-                                                <ul className='center'>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                    <li className='center'><button type='radio'>Text</button></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <a href='http://localhost:3000/MainMenu' className='buttonClass'>
+                        {/* <a href='http://localhost:3000/MainMenu' className='buttonClass'>
                             <button type='submit'>Place Your Order!</button>
-                        </a>
+                        </a> */}
                         <a href='http://localhost:3000/MainMen' className='buttonClass'>
                             <button type='submit'>Order More!</button>
                         </a>
