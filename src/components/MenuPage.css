@@ -1,63 +1,6 @@
-.tabs {
-    margin-top: 115px;
-    margin-bottom: -1px !important;
-    position: relative;
-    }
-    .tab-content {
-    padding: 60px;
-    top: 197px;
-    color: #000;
-    background-color: white;
-    }
-    .tab-pane {
-    display: none;
-    }
-    .tab-pane.is-active {
-    display: block;
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    }
-    .is-active {
-    display: initial;
-    }
-
-    .cent{
-    display: block;
-    margin: 10px auto;
-    padding: 5px;
-    border: 1px solid #ccc}
-    
-    .video
-    {display: block;
-    margin: 0 auto;}
-    
-    /* CSS from http://embedresponsively.com */
-    .embed-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-    }
-    .embed-container iframe,
-    .embed-container object,
-    .embed-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
 .restaurant-name {
     text-align: center;
     font-size: 25px;
-}
-.navbar-item {
-    display: flex;
-    justify-content: flex-end;
 }
 
 .main-navbar {
@@ -66,9 +9,12 @@
 
 .main-image {
     background-image: url("https://images.unsplash.com/photo-1516684902511-1e07238471ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    padding-bottom: 55px;    
 }
 .order-buttons {
     display: inline-block;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
 }
 
 .seat-number {
@@ -76,12 +22,35 @@
     background-color: #83BCA9;
     
     padding:15px 15px;
-    font-size: 25px;
+    font-size: 15px;
 }
 .order-total {
     margin-top: 5px;
     border: 1px solid #83BCA9;
     background-color: #83BCA9 ;
     padding:15px 15px;
-    font-size: 25px;
+    font-size: 15px;
+}
+
+.navbar-item.navbar-center {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa5440;
+
+}
+.navbar-item {
+    background-color: #aa5440;
+}
+.res-name {
+    font-size: 60px;
+    color: #D36135;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-left: 85px;
+}
+
+.no-hover{
+    pointer-events: none;
 }
