@@ -3,9 +3,7 @@ import axios from 'axios';
 import('./Ghost.css');
 
 class Ghost extends Component {
-    constructor(props) {
-        super(props);
-    }
+   
     render() {
         return (
             <div>
