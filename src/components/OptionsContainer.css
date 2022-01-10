@@ -22,6 +22,8 @@
 .menuOption{
     display: flex; 
     justify-content: center;
+    flex-direction: column;
+    margin: 50px;
 }
 .center{
     justify-content: center;
@@ -29,4 +31,8 @@
 .optionsContainer{
     max-height: 100%;
     height: 800px;
+}
+.buttonClass{
+    justify-content: end;
+    justify-content: center;
 }
