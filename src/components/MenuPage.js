@@ -6,38 +6,20 @@ import Ghost from './Ghost';
 
 const data = [
     {
-      title: "Dragon Ball Z",
-      creator: "Takao Koyama",
-      caption:
-        "Doragon Bōru Zetto, commonly abbreviated as DBZ) is a Japanese anime television series produced by Toei Animation",
-      user: "@romebell",
-      tags: ["anime", "dope"],
-      date: "April 26, 1989",
-      imageUrl:
-        "https://i.pinimg.com/originals/2b/a0/7e/2ba07e697bf5022a207a3863545168f5.gif",
+      catagory: 'Drink'
     },
     {
-      title: "Fullmetal Alchemist",
-      creator: "Hiromu Arakawa",
-      caption:
-        "Set in the early 20th century, in a fictional universe in which alchemy is a widely practiced science, the series follows the journey of two alchemist brothers, Edward and Alphonse Elric, who are searching for the philosophers stone to restore their bodies after a failed attempt to bring their mother back to life using alchemy.",
-      user: "Sydney",
-      tags: ["#shonen", "#female-mangaka"],
-      date: "October 4, 2003",
-      imageUrl:
-        "https://upload.wikimedia.org/wikipedia/en/b/b1/Fullmetal_Alchemist_%282003%29_key_visual.png",
+        catagory: 'Dinner'
     },
     {
-        title: "Fullmetal Alchemist",
-        creator: "Hiromu Arakawa",
-        caption:
-          "Set in the early 20th century, in a fictional universe in which alchemy is a widely practiced science, the series follows the journey of two alchemist brothers, Edward and Alphonse Elric, who are searching for the philosophers stone to restore their bodies after a failed attempt to bring their mother back to life using alchemy.",
-        user: "Sydney",
-        tags: ["#shonen", "#female-mangaka"],
-        date: "October 4, 2003",
-        imageUrl:
-          "https://upload.wikimedia.org/wikipedia/en/b/b1/Fullmetal_Alchemist_%282003%29_key_visual.png",
-      },
+        catagory: 'Lunch'
+    },
+    {
+        catagory: 'breakfast'
+    },
+    {
+        catagory: 'Desert'
+    },
 
 ]
 
@@ -55,7 +37,7 @@ const displayCharacters = data.map((a, idx) =>{
                                         </div>
                                         <div className="column is-5 featured-content va">
                                             <div>
-                                                <h3 className="heading post-category">Category Name</h3>
+                                                <h3 className="" id='color'>{a.catagory}</h3>
                                                 <h1 className="title post-title">Menu Item!</h1>
                                                 <p className="post-excerpt">Description! here is some really gud food! eat up! <a href="https://ghost.io">Ghost</a>. </p>
                                                 <br />
@@ -80,7 +62,8 @@ const displayCharacters = data.map((a, idx) =>{
                         </a>
                     </div>
                     </>
-    );
+     );
+    
   });
 
 class MenuPage extends Component {
