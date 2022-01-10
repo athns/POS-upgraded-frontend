@@ -6,7 +6,7 @@ import './MenuPage.css';
 import Ghost from './Ghost';
 let currentSeat = 1;
 function addTableNumber() {
-    
+
 }
 
 const data = [
@@ -14,18 +14,11 @@ const data = [
       catagory: 'Drink'
     },
     {
-        catagory: 'Dinner'
-    },
-    {
-        catagory: 'Lunch'
-    },
-    {
-        catagory: 'breakfast'
+        catagory: 'Sandwich'
     },
     {
         catagory: 'Desert'
     },
-
 ]
 
 
