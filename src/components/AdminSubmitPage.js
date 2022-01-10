@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import('./LandingPage.css');
 
-class LandingPage extends Component {
+class PlaceOrderPage extends Component {
     constructor(props) {
         super(props);
     }
@@ -28,30 +28,18 @@ class LandingPage extends Component {
                         <div class="container has-text-centered">
                             <div class="column is-6 is-offset-3">
                                 <h1 class="title">
-                                    Enter Your Party Number!!
+                                    Your Order is Placed!!
                                 </h1>
                                 <h2 class="subtitle">
                                 </h2>
-                                <form>
-                                    <div class="box">
-                                        <div class="field is-grouped">
-                                            <p class="control is-expanded">
-                                                <input class="input" type="Number" placeholder="Enter Your Table Code"></input>
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                    <div class='orderStart'>
-                                        <button type="submit">Start Your Order!</button>
-                                    </div>
-                                </form>
-                                <a href="">
-                                    <button>Sign Up!</button>
-                                </a>
+                                
                                 
                             </div>
                         </div>
                     </div>
+                    <a href='http://localhost:3000/'>
+                        <button type='link'>Welcome! lets get started!</button>
+                    </a>
 
                 </section>
                 <script async type="text/javascript" src="../js/bulma.js"></script>
@@ -60,4 +48,4 @@ class LandingPage extends Component {
     };
 };
 
-export default LandingPage;
+export default PlaceOrderPage;
