@@ -4,7 +4,7 @@ import './OptionsContainer.css'
 
 const orderArray = [];
 
-class Options extends Component {
+class DrinkOptions extends Component {
     constructor(props) {
         super(props);
     }
@@ -113,7 +113,7 @@ class Options extends Component {
     }
 }
 
-export default Options;
+export default DrinkOptions;
 
 function placeOrder() {
 

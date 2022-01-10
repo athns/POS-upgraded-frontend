@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './MenuPage.css';
 
+
 import Ghost from './Ghost';
 
 const data = [

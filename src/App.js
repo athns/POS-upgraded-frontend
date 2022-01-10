@@ -14,15 +14,14 @@ import "./App.css";
 // components
 import Signup from './components/Signup';
 import About from './components/About';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+
 import Profile from './components/Profile';
 import Welcome from './components/Welcome';
 import MenuPage from "./components/MenuPage";
 import LandingPage from "./components/LandingPage";
 import Ghost from "./components/Ghost";
 import Login from './components/Login';
-import Options from "./components/Options";
+import DrinkOptions from "./components/DrinkOptions";
 
 
 const PrivateRoute = ({ children }) => {
@@ -97,7 +96,7 @@ function Apps() {
           <Route path="/MainMenu" element={<MenuPage />} />
 
           <Route path="/ghost" element={<Ghost />} />
-          <Route path="/options" element={<Options />} />
+          <Route path="/drinkOptions" element={<DrinkOptions />} />
           <Route path='/signup' element={Signup} />
           <Route
             path="/login"
