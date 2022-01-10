@@ -28,7 +28,7 @@ class LandingPage extends Component {
                         <div class="container has-text-centered">
                             <div class="column is-6 is-offset-3">
                                 <h1 class="title">
-                                    Enter Your Table Code!!
+                                    Enter Your Party Number!!
                                 </h1>
                                 <h2 class="subtitle">
                                 </h2>
