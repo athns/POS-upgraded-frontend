@@ -64,14 +64,26 @@ const displayCharacters = data.map((a, idx) => {
             </div>
         </>
     );
-
+    
 });
+
 
 
 class MenuPage extends Component {
     constructor(props) {
         super(props);
     }
+    componentDidMount() {
+        axios.get('http://localhost:3000/foods')
+        .then((response) => {
+            console.log(response.data);
+            
+        })
+        .catch((error) => {
+            console.log('error hitting api', error);
+        })
+    }
+  
     render() {
         return (
             <>
@@ -106,5 +118,6 @@ class MenuPage extends Component {
         );
     }
 }
+
 
 export default MenuPage;
