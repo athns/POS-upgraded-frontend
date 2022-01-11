@@ -12,7 +12,9 @@ class SandwichOptions extends Component {
             soup: "",
             size: "",
         }
-        this.onValueChange = this.onValueChange.bind(this);
+        this.onFriesChange = this.onFriesChange.bind(this);
+        this.onSoupChange = this.onSoupChange.bind(this);
+        this.onSizeChange = this.onSizeChange.bind(this);
         this.friesFormSubmit = this.friesFormSubmit.bind(this);
         this.soupFormSubmit = this.soupFormSubmit.bind(this);
         this.sizeFormSubmit = this.sizeFormSubmit.bind(this);
@@ -23,8 +25,8 @@ class SandwichOptions extends Component {
         this.setState({
             fries: event.target.value
         });
-        // console.log(event.target.value, "jhihihasd")
-        // console.log(this.state.tempval, "liusadhpo9uiasewpouads;oiua;pewfoiu");
+        console.log(event.target.value, "jhihihasd")
+        console.log(this.state.tempval, "liusadhpo9uiasewpouads;oiua;pewfoiu");
     }
 
     onSoupChange(event) {

@@ -7,9 +7,9 @@ const desertOrderArray = [];
 class DesertOptions extends Component {
     constructor(props) {
         super(props);
-        this.state = [
-            
-        ]
+        this.state = {
+            flavor: ""
+    }
         this.onValueChange = this.onValueChange.bind(this);
         this.formSubmit = this.formSubmit.bind(this);
     }
@@ -18,11 +18,12 @@ class DesertOptions extends Component {
         this.setState({
             selectedOption: event.target.value
         });
+        console.log(event.target.value);
     }
 
     formSubmit(event) {
         event.preventDefault();
-        console.log(this.state.selectedOption)
+
     }
     render() {
         return (

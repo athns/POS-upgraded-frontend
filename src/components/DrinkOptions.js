@@ -8,8 +8,10 @@ class DrinkOptions extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: ''
-        }
+            drinkSize: "",
+            house: ""
+    }
+        this.onSizeChange = this.onValueChange.bind(this);
         this.onValueChange = this.onValueChange.bind(this);
         this.formSubmit = this.formSubmit.bind(this);
     }
