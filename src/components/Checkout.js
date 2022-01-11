@@ -59,7 +59,7 @@ class Checkout extends Component {
                                     </div>
                                 </div>
                                 <div class="level-right">
-                                    <small class="level-item" style="color: var(--textLight)">
+                                    <small class="level-item">
                                         &copy; Super Cool Website. All Rights Reserved.
                                     </small>
                                 </div>
