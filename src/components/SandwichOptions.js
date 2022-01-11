@@ -8,10 +8,16 @@ class SandwichOptions extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: ''
+            data : [
+                "SmallFries",
+                "MediumFries",
+                "LargeFries"
+            ]
         }
         this.onValueChange = this.onValueChange.bind(this);
-        this.formSubmit = this.formSubmit.bind(this);
+        this.friesFormSubmit = this.friesFormSubmit.bind(this);
+        this.soupFormSubmit = this.soupFormSubmit.bind(this);
+        this.sizeFormSubmit = this.sizeFormSubmit.bind(this);
     }
 
     onValueChange(event) {
@@ -22,7 +28,7 @@ class SandwichOptions extends Component {
 
     friesFormSubmit(event) {
         event.preventDefault();
-        console.log(this.state.selectedOption)
+        console.log(this.state.selectedOption);
     }
 
     soupFormSubmit(event) {
