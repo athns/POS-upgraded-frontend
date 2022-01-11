@@ -16,14 +16,13 @@ class DesertOptions extends Component {
 
     onValueChange(event) {
         this.setState({
-            selectedOption: event.target.value
+            flavor: event.target.value
         });
-        console.log(event.target.value);
     }
 
     formSubmit(event) {
         event.preventDefault();
-
+        desertOrderArray.push(this.state.flavor)
     }
     render() {
         return (
