@@ -12,15 +12,27 @@ function addTableNumber() {
 const data = [
     {
         catagory: 'Drink',
-        link: 'http://localhost:3000/drinkOptions'
+        link: 'http://localhost:3000/drinkOptions',
+        drinkImageOne: '',
+        drinkImageTwo: '',
+        drinkImageThree: '',
+        drinkImageFour: '',
     },
     {
         catagory: 'Sandwich',
-        link: 'http://localhost:3000/sandwichOptions'
+        link: 'http://localhost:3000/sandwichOptions',
+        drinkImageOne: '',
+        drinkImageTwo: '',
+        drinkImageThree: '',
+        drinkImageFour: '',
     },
     {
         catagory: 'Desert',
-        link: 'http://localhost:3000/desertOptions'
+        link: 'http://localhost:3000/desertOptions',
+        drinkImageOne: '',
+        drinkImageTwo: '',
+        drinkImageThree: '',
+        drinkImageFour: '',
     }
 ]
 
