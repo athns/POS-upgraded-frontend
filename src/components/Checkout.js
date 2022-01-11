@@ -20,13 +20,13 @@ class Checkout extends Component {
                                     <form>
                                         <div class="field">
                                             <div class="control">
-                                                <input class="input is-medium" type="text" placeholder="Name"/>
+                                                <input class="input is-medium" type="text" placeholder="Name" />
                                             </div>
                                         </div>
 
                                         <div class="field">
                                             <div class="control">
-                                                <input class="input is-medium" type="email" placeholder="Email"/>
+                                                <input class="input is-medium" type="email" placeholder="Email" />
                                             </div>
                                         </div>
                                         <button class="button is-block is-primary is-fullwidth is-medium">Submit</button>
@@ -37,33 +37,33 @@ class Checkout extends Component {
                             </div>
                         </div>
                         <div class="column is-8 is-offset-2">
-                            <br/>
-                                <nav class="level">
-                                    <div class="level-left">
-                                        <div class="level-item">
-                                            <span class="icon">
-                                                <i class="fab fa-twitter"></i>
-                                            </span> &emsp;
-                                            <span class="icon">
-                                                <i class="fab fa-facebook"></i>
-                                            </span> &emsp;
-                                            <span class="icon">
-                                                <i class="fab fa-instagram"></i>
-                                            </span> &emsp;
-                                            <span class="icon">
-                                                <i class="fab fa-github"></i>
-                                            </span> &emsp;
-                                            <span class="icon">
-                                                <i class="fas fa-envelope"></i>
-                                            </span>
-                                        </div>
+                            <br />
+                            <nav class="level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <span class="icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </span> &emsp;
+                                        <span class="icon">
+                                            <i class="fab fa-facebook"></i>
+                                        </span> &emsp;
+                                        <span class="icon">
+                                            <i class="fab fa-instagram"></i>
+                                        </span> &emsp;
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span> &emsp;
+                                        <span class="icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
                                     </div>
-                                    <div class="level-right">
-                                        <small class="level-item" style="color: var(--textLight)">
-                                            &copy; Super Cool Website. All Rights Reserved.
-                                        </small>
-                                    </div>
-                                </nav>
+                                </div>
+                                <div class="level-right">
+                                    <small class="level-item" style="color: var(--textLight)">
+                                        &copy; Super Cool Website. All Rights Reserved.
+                                    </small>
+                                </div>
+                            </nav>
                         </div>
                     </div>
                 </section>
@@ -72,3 +72,5 @@ class Checkout extends Component {
         );
     }
 }
+
+export default Checkout;
