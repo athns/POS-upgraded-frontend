@@ -57,7 +57,7 @@ class Login extends Component {
     return (
       <>
         <section id="login" className="hero is-fullheight">
-          <div className="hero-body has-text-centered">
+          <div className="newHeroColor hero-body has-text-centered">
             <div className="login">
             <h1>Welcome Back</h1>
               <img href='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/project/POS-upgraded-frontend/src/img/CoffeeBetch.png'></img>

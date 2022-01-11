@@ -42,7 +42,7 @@ const displayCharacters = data.map((a, idx) => {
                                         <h1 className="title post-title">Menu Item!</h1>
                                         <p className="post-excerpt">Description! here is some really gud food! eat up! <a href="https://ghost.io">Ghost</a>. </p>
                                         <br />
-                                        <a href={a.link} className="button is-primary">Read More</a>
+                                        <a href={a.link} className="button is-primary">Customize your order!</a>
                                     </div>
 
                                 </div>
