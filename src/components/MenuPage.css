@@ -49,11 +49,61 @@
         margin-top: 130px;
         margin-bottom: 130px;
         justify-content: space-around;
+        border-bottom: 10px solid black;
+        padding: 130px;
     }
     .menuItem{
         background-color: pink;
         width: 400px;
         height: 150px;
+    }
+    .restaurant-name {
+        text-align: center;
+        font-size: 25px;
+    }
+    .main-navbar {
+        background-color: #D36135;
+    }
+    .order-buttons {
+        display: inline-block;
+        font-family: 'Spartan', sans-serif;
+        font-weight: 700;
+    }
+    .seat-number {
+        border: 1px solid #83BCA9;
+        background-color: #83BCA9;
+        padding:15px 15px;
+        font-size: 15px;
+    }
+    .order-total {
+        margin-top: 5px;
+        border: 1px solid #83BCA9;
+        background-color: #83BCA9 ;
+        padding:15px 15px;
+        font-size: 15px;
+    }
+    .navbar-item.navbar-center {
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #AA5440;
+    }
+    .navbar-item, .navbar {
+        background-color: #AA5440;
+    }
+    .res-name {
+        font-size: 60px;
+        color: #E6764A;
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-left: 85px;
+    }
+    .no-hover{
+        pointer-events: none;
+    }
+    .spaceTab{
+        padding-top: 50px;
     }
     #color{
         color: Pink;
