@@ -26,13 +26,10 @@ class DesertOptions extends Component {
                                 <li className='center'><button type='radio'>1 scoop strawberry</button></li>
                             </ul>
                             </div>
+                    </form>
                         <a href='http://localhost:3000/MainMenu' className='buttonClass'>
-                            <button type='submit'>Place Your Order!</button>
-                        </a>
-                        <a href='http://localhost:3000/MainMen' className='buttonClass'>
                             <button type='submit'>Order More!</button>
                         </a>
-                    </form>
                 </div>
 
 

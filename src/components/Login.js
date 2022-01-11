@@ -59,6 +59,7 @@ class Login extends Component {
         <section id="login" className="hero is-fullheight">
           <div className="hero-body has-text-centered">
             <div className="login">
+            <h1>Welcome Back</h1>
               <img href='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/project/POS-upgraded-frontend/src/img/CoffeeBetch.png'></img>
              <form onSubmit={this.handleSubmit.bind(this)}>
                 <div className="field">
@@ -92,7 +93,7 @@ class Login extends Component {
                   className="button is-block is-fullwidth is-primary is-medium is-rounded"
                   type="submit"
                 >
-                  Login
+                  GO!
                 </button>
               </form>
               <br />
