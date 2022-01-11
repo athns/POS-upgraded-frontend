@@ -1,79 +1,58 @@
-:root {
-    --brandColor: hsl(166, 67%, 51%);
-    --background: rgb(247, 247, 247);
-    --textDark: hsla(0, 0%, 0%, 0.66);
-    --textLight: hsla(0, 0%, 0%, 0.33);
-  }
+.restaurant-name {
+    text-align: center;
+    font-size: 25px;
+}
 
-body {
-    background: var(--background);
-    height: 100vh;
-    color: var(--textDark);
+.main-navbar {
+    background-color: #D36135;
 }
-  
-.field:not(:last-child) {
-    margin-bottom: 1rem;
+
+.order-buttons {
+    display: inline-block;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
 }
-  
-.register {
-    margin-top: 10rem;
-    background: white;
-    border-radius: 10px;
+
+.seat-number {
+    border: 1px solid #83BCA9;
+    background-color: #83BCA9;
+    
+    padding:15px 15px;
+    font-size: 15px;
 }
-  
-.left,
-.right {
-    padding: 4.5rem;
+.order-total {
+    margin-top: 5px;
+    border: 1px solid #83BCA9;
+    background-color: #83BCA9 ;
+    padding:15px 15px;
+    font-size: 15px;
 }
-  
-.left {
-    border-right: 5px solid var(--background);
+
+.navbar-item.navbar-center {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa5440;
 }
-  
-.left .title {
-    font-weight: 800;
-    letter-spacing: -2px;
+
+.navbar-item {
+    background-color: #aa5440;
 }
-  
-.left .colored {
-    color: var(--brandColor);
-    font-weight: 500;
-    margin-top: 1rem !important;
-    letter-spacing: -1px;
+.res-name {
+    font-size: 60px;
+    color: #e6764a;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-left: 85px;
 }
-  
-.left p {
-    color: var(--textLight);
-    font-size: 1.15rem;
+
+.no-hover{
+    pointer-events: none;
 }
-  
-.right .title {
-    font-weight: 800;
-    letter-spacing: -1px;
-}
-  
-.right .description {
-    margin-top: 1rem;
-    margin-bottom: 1rem !important;
-    color: var(--textLight);
-    font-size: 1.15rem;
-}
-  
-.right small {
-    color: var(--textLight);
-}
-  
-input {
-    font-size: 1rem;
-}
-  
-input:focus {
-    border-color: var(--brandColor) !important;
-    box-shadow: 0 0 0 1px var(--brandColor) !important;
-}
-  
-.fab,
-.fas {
-    color: var(--textLight);
-    margin-right: 1rem;
+
+/*checkout box */
+
+#menu-item {
+    color: #aa5440;
 }

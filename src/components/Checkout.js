@@ -5,18 +5,42 @@ class Checkout extends Component {
     render() {
         return (
             <>
+            <nav className="navbar no-hover" role="navigation" aria-label="main navigation">
+                    <div id="navbarBasicExample" className="navbar-menu">
+                        <div className="restaurant-middle navbar-item navbar-center">
+                            <h1 className='res-name'>Rising Bistro</h1>
+                        </div>
+                        <div className="navbar-end">
+                            <div className="navbar-item">
+                                <div className="order-buttons">
+                                    <p className="seat-number">
+                                        <span>
+                                            Seat Number :
+                                        </span>
+                                    </p>
+                                    <p className="order-total">
+                                        <span>
+                                            Order Total : $
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
                 <section class="container">
                     <div class="columns is-multiline">
                         <div class="column is-8 is-offset-2 register">
                             <div class="columns">
                                 <div class="column left">
-                                    <h1 class="title is-1">Super Cool Website</h1>
-                                    <h2 class="subtitle colored is-4">Lorem ipsum dolor sit amet.</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis ex deleniti aliquam tempora libero excepturi vero soluta odio optio sed.</p>
+                                    <h1 class="title is-1">Order Details</h1>
+                                    <h2 class="subtitle colored is-4"></h2>
+                                    <p id="menu-items">[Food Item]</p>
+                                    <p id="menu-items">[Drink Item]</p>
+                                    <p id="menu-items">[Desert Item]</p>
                                 </div>
                                 <div class="column right has-text-centered">
-                                    <h1 class="title is-4">Sign up today</h1>
-                                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                                    <h1 class="title is-4">Ready to Pay?</h1>
                                     <form>
                                         <div class="field">
                                             <div class="control">
@@ -29,9 +53,7 @@ class Checkout extends Component {
                                                 <input class="input is-medium" type="email" placeholder="Email" />
                                             </div>
                                         </div>
-                                        <button class="button is-block is-primary is-fullwidth is-medium">Submit</button>
-                                        <br />
-                                        <small><em>Lorem ipsum dolor sit amet consectetur.</em></small>
+                                        <button class="button is-block is-primary is-fullwidth is-medium">Pay Now</button>
                                     </form>
                                 </div>
                             </div>
@@ -39,34 +61,13 @@ class Checkout extends Component {
                         <div class="column is-8 is-offset-2">
                             <br />
                             <nav class="level">
-                                <div class="level-left">
-                                    <div class="level-item">
-                                        <span class="icon">
-                                            <i class="fab fa-twitter"></i>
-                                        </span> &emsp;
-                                        <span class="icon">
-                                            <i class="fab fa-facebook"></i>
-                                        </span> &emsp;
-                                        <span class="icon">
-                                            <i class="fab fa-instagram"></i>
-                                        </span> &emsp;
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span> &emsp;
-                                        <span class="icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="level-right">
-                                    <small class="level-item">
-                                        &copy; Super Cool Website. All Rights Reserved.
-                                    </small>
-                                </div>
                             </nav>
                         </div>
                     </div>
                 </section>
+                
+                <script src="../js/bulma.js"></script>
+                <script src="../js/tabs.js"></script>
             </>
 
         );
