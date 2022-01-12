@@ -43,7 +43,7 @@ class LandingPage extends Component {
                                     </div>
                                 </form>
                                     <div class='orderStart'>
-                                        <a href='http://localhost:3000/MainMenu'>
+                                        <a href='https://pos-upgraded-frontend.herokuapp.com/MainMenu'>
                                             <button type="submit">Start Your Order!</button>
 
                                         </a>
