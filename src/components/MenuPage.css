@@ -62,7 +62,7 @@
         font-size: 25px;
     }
     .main-navbar {
-        background-color: #D36135;
+        background-color: #aa5440;
     }
     .order-buttons {
         display: inline-block;
@@ -80,7 +80,6 @@
         flex-grow: 1;
         flex-direction: column;
         justify-content: center;
-        background-color: black;
     }
     .navbar-item, .navbar {
         background-color: black;

@@ -25,6 +25,7 @@ import DrinkOptions from "./components/DrinkOptions";
 import SandwichOptions from "./components/SandwichOptions";
 import DesertOptions from "./components/DesertOptions";
 import PlaceOrderPage from "./components/AdminSubmitPage";
+import Checkout from "./components/Checkout";
 
 
 const PrivateRoute = ({ children }) => {
@@ -105,6 +106,7 @@ function Apps() {
           <Route path="/desertOptions" element={<DesertOptions />} />
           <Route path="/PlacedOrderPage" element={<PlaceOrderPage />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route
             path="/login"
             element={

@@ -1,0 +1,58 @@
+.restaurant-name {
+    text-align: center;
+    font-size: 25px;
+}
+
+.main-navbar {
+    background-color: #D36135;
+}
+
+.order-buttons {
+    display: inline-block;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.seat-number {
+    border: 1px solid #83BCA9;
+    background-color: #83BCA9;
+    
+    padding:15px 15px;
+    font-size: 15px;
+}
+.order-total {
+    margin-top: 5px;
+    border: 1px solid #83BCA9;
+    background-color: #83BCA9 ;
+    padding:15px 15px;
+    font-size: 15px;
+}
+
+.navbar-item.navbar-center {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #aa5440;
+}
+
+.navbar-item {
+    background-color: #aa5440;
+}
+.res-name {
+    font-size: 60px;
+    color: #e6764a;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-left: 85px;
+}
+
+.no-hover{
+    pointer-events: none;
+}
+
+/*checkout box */
+
+#menu-item {
+    color: #aa5440;
+}

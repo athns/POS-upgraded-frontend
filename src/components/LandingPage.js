@@ -23,7 +23,6 @@ class LandingPage extends Component {
                             </div>
                         </nav>
                     </div>
-
                     <div class="hero-body">
                         <div class="container has-text-centered">
                             <div class="column is-6 is-offset-3">
