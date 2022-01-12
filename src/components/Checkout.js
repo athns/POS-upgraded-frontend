@@ -42,17 +42,7 @@ class Checkout extends Component {
                                 <div class="column right has-text-centered">
                                     <h1 class="title is-4">Ready to Pay?</h1>
                                     <form>
-                                        <div class="field">
-                                            <div class="control">
-                                                <input class="input is-medium" type="text" placeholder="Name" />
-                                            </div>
-                                        </div>
-
-                                        <div class="field">
-                                            <div class="control">
-                                                <input class="input is-medium" type="email" placeholder="Email" />
-                                            </div>
-                                        </div>
+                                        <div><h1>Ready to Checkout?</h1></div>
                                         <button class="button is-block is-primary is-fullwidth is-medium">Pay Now</button>
                                     </form>
                                 </div>
@@ -66,8 +56,6 @@ class Checkout extends Component {
                     </div>
                 </section>
                 
-                <script src="../js/bulma.js"></script>
-                <script src="../js/tabs.js"></script>
             </>
 
         );
