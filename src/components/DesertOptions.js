@@ -7,6 +7,13 @@ const desertOrderArray = [];
 class DesertOptions extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            name: "React"
+        };
+        this.onChangeValue = this.onChangeValue.bind(this);
+    }
+    onChangeValue(event) {
+        console.log(event.target.value)
     }
     render() {
         return (
@@ -17,22 +24,19 @@ class DesertOptions extends Component {
                     <h1 className='chosenItem'> Menu Item Chosen </h1>
                 </div>
                 <div className='optionsContainer'>
-                    <form>
+                   
                         <div className='menuOption'>
                             <h3>Add a Scoop!</h3>
-                            <ul className='center'>
-                                <li className='center'><button type='radio'>1 scoop vanilla</button></li>
-                                <li className='center'><button type='radio'>1 scoop chocolate</button></li>
-                                <li className='center'><button type='radio'>1 scoop strawberry</button></li>
+                            <ul onChange={this.onChangeValue} className='center'>
+                                <li className='center'><button type='radio' value='1 scoop vanilla' name='ice cream'>1 scoop vanilla</button></li>
+                                <li className='center'><button type='radio' value='1 scoop chocolate' name='ice cream'>1 scoop chocolate</button></li>
+                                <li className='center'><button type='radio' value='1 scoop strawberry' name='ice cream'>1 scoop strawberry</button></li>
                             </ul>
                             </div>
+                    
                         <a href='http://localhost:3000/MainMenu' className='buttonClass'>
-                            <button type='submit'>Place Your Order!</button>
-                        </a>
-                        <a href='http://localhost:3000/MainMen' className='buttonClass'>
                             <button type='submit'>Order More!</button>
                         </a>
-                    </form>
                 </div>
 
 
@@ -45,6 +49,4 @@ class DesertOptions extends Component {
 
 export default DesertOptions;
 
-function placeOrder() {
 
-}

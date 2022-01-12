@@ -57,10 +57,11 @@ class Login extends Component {
     return (
       <>
         <section id="login" className="hero is-fullheight">
-          <div className="hero-body has-text-centered">
+          <div className="newHeroColor hero-body has-text-centered">
             <div className="login">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZc2OTcmowp6dUbR_mwc_HPU5spYnvIwFSKyNdb1H1WrJUpEWJlDu-4q9rvgy7IrMfCc&usqp=CAU" width="325px" alt="logo"/>
-              <form onSubmit={this.handleSubmit.bind(this)}>
+            <h1>Welcome Back</h1>
+              <img href='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/project/POS-upgraded-frontend/src/img/CoffeeBetch.png'></img>
+             <form onSubmit={this.handleSubmit.bind(this)}>
                 <div className="field">
                   <div className="control">
                     <input
@@ -92,7 +93,7 @@ class Login extends Component {
                   className="button is-block is-fullwidth is-primary is-medium is-rounded"
                   type="submit"
                 >
-                  Login
+                  GO!
                 </button>
               </form>
               <br />

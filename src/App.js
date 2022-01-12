@@ -38,6 +38,7 @@ function Apps() {
   const [currentUser, setCurrentUser] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(true);
 
+  
   useEffect(() => {
     let token;
 

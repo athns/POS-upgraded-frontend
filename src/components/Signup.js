@@ -78,18 +78,16 @@ class Signup extends Component {
                 <div className="column left">
                   <h1 className="title is-1">Super Cool Website</h1>
                   <h2 className="subtitle colored is-4">
-                    Lorem ipsum dolor sit amet.
+                    Coffee Stop!
                   </h2>
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis ex deleniti aliquam tempora libero excepturi vero
-                    soluta odio optio sed.
+                    The best coffee on the street!
                   </p>
                 </div>
                 <div className="column right has-text-centered">
                   <h1 className="title is-4">Sign up today</h1>
                   <p className="description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                    New User Information Here!
                   </p>
                   <form onSubmit={this.handleSubmit.bind(this)}>
                     <div className="field">
@@ -148,12 +146,12 @@ class Signup extends Component {
                       </div>
                     </div>
 
-                    <button type="submit" className="button is-block is-primary is-fullwidth is-medium">
+                    <button id='submitter' type="submit" className="button is-block is-primary is-fullwidth is-medium">
                       Submit
                     </button>
                     <br />
                     <small>
-                      <em>Lorem ipsum dolor sit amet consectetur.</em>
+                      <em></em>
                     </small>
                   </form>
                 </div>

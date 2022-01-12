@@ -41,14 +41,17 @@ class LandingPage extends Component {
 
                                         </div>
                                     </div>
-                                    <div class='orderStart'>
-                                        <button type="submit">Start Your Order!</button>
-                                    </div>
                                 </form>
-                                <a href="">
+                                    <div class='orderStart'>
+                                        <a href='http://localhost:3000/MainMenu'>
+                                            <button type="submit">Start Your Order!</button>
+
+                                        </a>
+                                    </div>
+                                <a href="http://localhost:3000/signup">
                                     <button>Sign Up!</button>
                                 </a>
-                                
+
                             </div>
                         </div>
                     </div>

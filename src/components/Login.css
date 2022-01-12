@@ -12,6 +12,13 @@ body {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.newHeroColor{
+  display: flex;
+  justify-content: center;
+  background-color: darkred;
+  color: brown;
+  font-size: 50px;
+}
 .box {
   margin-top: 5rem;
 }
@@ -51,6 +58,15 @@ p.subtitle {
 
 .fa {
   margin-left: 5px;
+}
+.level{
+  font-size: 30px;
+}
+.login{
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 30px;
 }
 
 #login {

@@ -273,10 +273,10 @@ class SandwichOptions extends Component {
                         {/* <a href='http://localhost:3000/MainMenu' className='buttonClass'>
                             <button type='submit'>Place Your Order!</button>
                         </a> */}
-                        <a href='http://localhost:3000/MainMen' className='buttonClass'>
+                    </form>
+                        <a href='http://localhost:3000/MainMenu' className='buttonClass'>
                             <button type='submit'>Order More!</button>
                         </a>
-                    </form>
                 </div>
             </div>
         )

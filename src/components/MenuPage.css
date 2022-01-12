@@ -86,10 +86,10 @@
         flex-grow: 1;
         flex-direction: column;
         justify-content: center;
-        background-color: #AA5440;
+        background-color: darkgreen;
     }
     .navbar-item, .navbar {
-        background-color: #AA5440;
+        background-color: darkgreen;
     }
     .res-name {
         font-size: 60px;
@@ -104,6 +104,9 @@
     }
     .spaceTab{
         padding-top: 50px;
+    }
+    .totalDiv{
+        background-color: white;
     }
     #color{
         color: Pink;

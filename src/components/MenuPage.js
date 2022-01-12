@@ -12,15 +12,27 @@ function addTableNumber() {
 const data = [
     {
         catagory: 'Drink',
-        link: 'http://localhost:3000/drinkOptions'
+        link: 'http://localhost:3000/drinkOptions',
+        drinkImageOne: '',
+        drinkImageTwo: '',
+        drinkImageThree: '',
+        drinkImageFour: '',
     },
     {
         catagory: 'Sandwich',
-        link: 'http://localhost:3000/sandwichOptions'
+        link: 'http://localhost:3000/sandwichOptions',
+        drinkImageOne: '',
+        drinkImageTwo: '',
+        drinkImageThree: '',
+        drinkImageFour: '',
     },
     {
         catagory: 'Desert',
-        link: 'http://localhost:3000/desertOptions'
+        link: 'http://localhost:3000/desertOptions',
+        drinkImageOne: '',
+        drinkImageTwo: '',
+        drinkImageThree: '',
+        drinkImageFour: '',
     }
 ]
 
@@ -42,7 +54,7 @@ const displayCharacters = data.map((a, idx) => {
                                         <h1 className="title post-title">Menu Item!</h1>
                                         <p className="post-excerpt">Description! here is some really gud food! eat up! <a href="https://ghost.io">Ghost</a>. </p>
                                         <br />
-                                        <a href={a.link} className="button is-primary">Read More</a>
+                                        <a href={a.link} className="button is-primary">Customize your order!</a>
                                     </div>
 
                                 </div>
@@ -68,51 +80,97 @@ const displayCharacters = data.map((a, idx) => {
 });
 
 
+
 class MenuPage extends Component {
+    state = {
+        menuItems: []
+    }
     constructor(props) {
         super(props);
     }
+    componentDidMount() {
+        axios.get('http://localhost:3000/foods')
+            .then((response) => {
+                response.JSON()
+
+            })
+            .then(itemList => {
+                this.setState({menuItems: itemList})
+            })
+            .catch((error) => {
+                console.log('error hitting api', error);
+            })
+    }
+
     render() {
         return (
             <>
                 <nav className="navbar no-hover" role="navigation" aria-label="main navigation">
                     <div id="navbarBasicExample" className="navbar-menu">
                         <div className="navbar-item navbar-center">
-                            <h1 className='res-name'>Rising Bistro</h1>
+                            <h1 className='res-name'> The Coffee Stop</h1>
                         </div>
                         <div className="navbar-end">
-                            <div className="navbar-item">
-                                <div className="order-buttons">
-                                    <p className="seat-number">
-                                        <span>
-                                            Seat Number :
-                                        </span>
-                                    </p>
-                                    <p className="order-total">
-                                        <span>
-                                            Order Total : $
-                                        </span>
-                                    </p>
+                            <div className=" totalDiv navbar-item">
+                                <div className="totalDiv order-buttons">
+                                    <span className='totalDiv'>
+                                        Order Total : $
+                                    </span>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </nav>
-                <section className="main-image">
-                    <div className="hero-body"></div>
-                </section>
+
                 <script src="../js/bulma.js"></script>
                 <script src="../js/tabs.js"></script>
                 <section className="hero is-info">
+                    <div className=" tab-pane is-active" id="pane-2">
+                        <div className="content">
+                            <div className="columns featured-post is-multiline">
+                                <div className="spaceTab column is-12 post">
+                                    <article className="columns featured">
+                                        <div className="column is-7 post-img ">
+                                            <img src="https://cdn.emk.dev/templates/featured-image.png" alt="" />
+                                        </div>
+                                        <div className="column is-5 featured-content va">
+                                            <div>
+                                                <h3 className="" id='color'></h3>
+                                                <h1 className="title post-title">Menu Item!</h1>
+                                                <p className="post-excerpt">Description! here is some really gud food! eat up! <a href="https://ghost.io">Ghost</a>. </p>
+                                                <br />
+                                                <a href='' className="button is-primary">Customize your order!</a>
+                                            </div>
 
-                    {displayCharacters}
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='menuFlex'>
+                        <a href='' className='menuItem'>
+                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
+                            <p>Hello</p>
+                        </a>
+                        <a href='' className='menuItem'>
+                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
+                        </a>
+                        <a href='' className='menuItem'>
+                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
+                        </a>
+                    </div>
+
+
                 </section>
-                {<script src="../js/bulma.js"></script>}
-                {<script src="../js/tabs.js"></script>}
+                {/* {<script src="../js/bulma.js"></script>}
+                {<script src="../js/tabs.js"></script>} */}
 
             </>
         );
     }
 }
+
 
 export default MenuPage;
