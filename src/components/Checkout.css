@@ -1,3 +1,51 @@
+body {
+    background-color: bisque;
+}
+button {
+    background-color: #83BCA9;
+    font-family: 'Spartan', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-items {
+    font-family: 'Spartan', sans-serif;
+    padding-top: 25px;
+    color: gray;
+    font-size: 20px;
+}
+.pay {
+    color: #83BCA9;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: 'Spartan', sans-serif;
+}
+.order-details {
+    font-size: 30px;
+    font-family: 'Spartan', sans-serif;
+    color: #83BCA9;
+
+}
+.order-total2 {
+    padding-top: 25px;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    color: gray;
+}
+
+.total {
+    color: gray;
+    font-weight: 500;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.space {
+    color:#aa5440;
+}
 .restaurant-name {
     text-align: center;
     font-size: 25px;

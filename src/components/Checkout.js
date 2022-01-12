@@ -15,12 +15,12 @@ class Checkout extends Component {
                                 <div className="order-buttons">
                                     <p className="seat-number">
                                         <span>
-                                            Seat Number :
+                                            Seat Number: 35
                                         </span>
                                     </p>
                                     <p className="order-total">
                                         <span>
-                                            Order Total : $
+                                            Order Total : $75.90
                                         </span>
                                     </p>
                                 </div>
@@ -28,29 +28,31 @@ class Checkout extends Component {
                         </div>
                     </div>
                 </nav>
-                <section class="container">
-                    <div class="columns is-multiline">
-                        <div class="column is-8 is-offset-2 register">
-                            <div class="columns">
-                                <div class="column left">
-                                    <h1 class="title is-1">Order Details</h1>
-                                    <h2 class="subtitle colored is-4"></h2>
-                                    <p id="menu-items">[Food Item]</p>
-                                    <p id="menu-items">[Drink Item]</p>
-                                    <p id="menu-items">[Desert Item]</p>
+                <section className="container">
+                    <div className="columns is-multiline">
+                        <div className="column is-8 is-offset-2 register">
+                            <div className="columns">
+                                <div className="column left">
+                                    <h1 className="order-details">Order Details</h1>
+                                    <hr className="space"/>
+                                    <h2 className="subtitle colored is-4"></h2>
+                                    <p id="menu-items">Mediterranean Sandwich (x2) | $45.00</p>
+                                    <p id="menu-items">Apple Juice (x2) | $13.00</p>
+                                    <p id="menu-items">Vanilla Ice-cream (x2) | $27.00</p>
                                 </div>
-                                <div class="column right has-text-centered">
-                                    <h1 class="title is-4">Ready to Pay?</h1>
+                                <div className="column right has-text-centered">
+                                    <h1 className="pay">Ready to Pay?</h1>
+                                    <h3 className="order-total2">Order Total</h3>
+                                    <p className="total">$85</p>
                                     <form>
-                                        <div><h1>Ready to Checkout?</h1></div>
-                                        <button class="button is-block is-primary is-fullwidth is-medium">Pay Now</button>
+                                        <button className="button is-block is-primary is-fullwidth is-medium">Pay Now</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="column is-8 is-offset-2">
+                        <div className="column is-8 is-offset-2">
                             <br />
-                            <nav class="level">
+                            <nav className="level">
                             </nav>
                         </div>
                     </div>
