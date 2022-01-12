@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './OptionsContainer.css'
 
-const desertOrderArray = [];
+let desertOrderArray = [];
 
 class DesertOptions extends Component {
     constructor(props) {
@@ -23,6 +23,7 @@ class DesertOptions extends Component {
     formSubmit(event) {
         event.preventDefault();
         desertOrderArray.push(this.state.flavor)
+        console.log(desertOrderArray)
     }
     render() {
         return (
@@ -43,7 +44,6 @@ class DesertOptions extends Component {
                                         <input
                                             type="radio"
                                             value="vanilla"
-                                            checked={this.state.selectedOption === "vanilla"}
                                             onChange={this.onValueChange}
                                         />
                                         Vanilla
@@ -58,7 +58,6 @@ class DesertOptions extends Component {
                                         <input
                                             type="radio"
                                             value="chocolate"
-                                            checked={this.state.selectedOption === "chocolate"}
                                             onChange={this.onValueChange}
                                         />
                                         chocolate
@@ -73,7 +72,6 @@ class DesertOptions extends Component {
                                         <input
                                             type="radio"
                                             value="strawberry"
-                                            checked={this.state.selectedOption === "strawberry"}
                                             onChange={this.onValueChange}
                                         />
                                         strawberry
@@ -83,6 +81,7 @@ class DesertOptions extends Component {
                                 <br />
                             </ul>
                         </div>
+                        <button onClick={this.submit}>add to cart</button>
                         <a href='http://localhost:3000/MainMenu' className='buttonClass'>
                             <button type='submit'>Place Your Order!</button>
                         </a>

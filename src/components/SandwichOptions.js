@@ -15,45 +15,37 @@ class SandwichOptions extends Component {
         this.onFriesChange = this.onFriesChange.bind(this);
         this.onSoupChange = this.onSoupChange.bind(this);
         this.onSizeChange = this.onSizeChange.bind(this);
-        this.friesFormSubmit = this.friesFormSubmit.bind(this);
-        this.soupFormSubmit = this.soupFormSubmit.bind(this);
-        this.sizeFormSubmit = this.sizeFormSubmit.bind(this);
+        this.formSubmit = this.formSubmit.bind(this);
     }
 
     onFriesChange(event) {
         // callback means that the thingy is asyc function and wont happen immediatly
         this.setState({
-            fries: event.target.value
+            fries: event.target.value,
         });
-        console.log(event.target.value, "jhihihasd")
-        console.log(this.state.tempval, "liusadhpo9uiasewpouads;oiua;pewfoiu");
     }
 
     onSoupChange(event) {
         this.setState({
-            soup: event.target.value
+            soup: event.target.value,
         });
     }
     onSizeChange(event) {
         this.setState({
-            size: event.target.value
+            size: event.target.value,
         });
+        
     }
 
-    friesFormSubmit(event) {
+    formSubmit(event) {
         event.preventDefault();
         sandwichOrderArray.push(this.state.fries);
-    }
-
-    soupFormSubmit(event) {
-        event.preventDefault();
         sandwichOrderArray.push(this.state.soup);
+        sandwichOrderArray.push(this.state.size);
+        console.log(sandwichOrderArray);
     }
 
-    sizeFormSubmit(event) {
-        event.preventDefault();
-        sandwichOrderArray.push(this.state.size);
-    }
+  
 
     // handleChange(event) {
     //     // ===== prevents the webpage from restarting everytime you click
@@ -93,15 +85,16 @@ class SandwichOptions extends Component {
                         <div className='menuOption'>
                             {/* friees */}
                             <h3>Side of Fries?</h3>
-                            <form onSubmit={this.friesFormSubmit}>
+                            <form onSubmit={this.formSubmit}>
                                 <ul className='center'>
                                     {/* small */}
                                     <div className="radio">
                                         <label>
                                             <input
                                                 type="radio"
+                                                name='form1'
                                                 value="SmallFries"
-                                                checked={this.state.tempval === "SmallFries"}
+                                                // checked={this.state.fries === "SmallFries"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Small Fries
@@ -114,8 +107,9 @@ class SandwichOptions extends Component {
                                         <label>
                                             <input
                                                 type="radio"
+                                                name='form1'
                                                 value="MediumFries"
-                                                checked={this.state.selectedOption === "MediumFries"}
+                                                // checked={this.state.fries === "MediumFries"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Medium Fries
@@ -128,8 +122,9 @@ class SandwichOptions extends Component {
                                         <label>
                                             <input
                                                 type="radio"
+                                                name='form1'
                                                 value="LargeFries"
-                                                checked={this.state.selectedOption === "LargeFries"}
+                                                // checked={this.state.fries === "LargeFries"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Large Fries
@@ -142,8 +137,9 @@ class SandwichOptions extends Component {
                                         <label>
                                             <input
                                                 type="radio"
+                                                name='form1'
                                                 value="SmallChilliCheeseFry"
-                                                checked={this.state.selectedOption === "SmallChilliCheeseFry"}
+                                                // checked={this.state.fries === "SmallChilliCheeseFry"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Small Chilli Cheese Fry
@@ -156,8 +152,9 @@ class SandwichOptions extends Component {
                                         <label>
                                             <input
                                                 type="radio"
+                                                name='form1'
                                                 value="MediumChilliCheeseFry"
-                                                checked={this.state.selectedOption === "MediumChilliCheeseFry"}
+                                                // checked={this.state.fries === "MediumChilliCheeseFry"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Medium Chilli Cheese Fry
@@ -170,8 +167,9 @@ class SandwichOptions extends Component {
                                         <label>
                                             <input
                                                 type="radio"
+                                                name='form1'
                                                 value="LargeChilliCheeseFry"
-                                                checked={this.state.selectedOption === "LargeChilliCheeseFry"}
+                                                // checked={this.state.fries === "LargeChilliCheeseFry"}
                                                 onChange={this.onFriesChange}
                                             />
                                             Large Chilli Cheese Fry
@@ -179,18 +177,13 @@ class SandwichOptions extends Component {
                                         {/*<li className='center'><button type='radio'>Large Chilli Cheese Fry</button></li>*/}
                                     </div>
                                     <br />
-
-                                    {/* testing the form submit button */}
-                                    <button className="btn btn-default" type="submit">
-                                        Submit
-                                    </button>
                                 </ul>
                             </form>
 
                             {/* soup */}
                             <div className='menuOption'>
                                 <h3>Side Soup</h3>
-                                <form onSubmit={this.soupFormSubmit}>
+                                <form onSubmit={this.formSubmit}>
                                     <ul className='center'>
 
                                         {/* tomato */}
@@ -198,8 +191,9 @@ class SandwichOptions extends Component {
                                             <label>
                                                 <input
                                                     type="radio"
+                                                    name='form2'
                                                     value="TomatoeSoup"
-                                                    checked={this.state.selectedOption === "TomatoeSoup"}
+                                                    // checked={this.state.selectedOption === "TomatoeSoup"}
                                                     onChange={this.onSoupChange}
                                                 />
                                                 Tomatoe Soup
@@ -213,8 +207,9 @@ class SandwichOptions extends Component {
                                             <label>
                                                 <input
                                                     type="radio"
+                                                    name='form2'
                                                     value="ChickenGnochi"
-                                                    checked={this.state.selectedOption === "ChickenGnochi"}
+                                                    // checked={this.state.selectedOption === "ChickenGnochi"}
                                                     onChange={this.onSoupChange}
                                                 />
                                                 Chicken Gnochi
@@ -228,8 +223,9 @@ class SandwichOptions extends Component {
                                             <label>
                                                 <input
                                                     type="radio"
+                                                    name='form2'
                                                     value="BeefStew"
-                                                    checked={this.state.selectedOption === "BeefStew"}
+                                                    // checked={this.state.selectedOption === "BeefStew"}
                                                     onChange={this.onValueChange}
                                                 />
                                                 Beef Stew
@@ -243,8 +239,9 @@ class SandwichOptions extends Component {
                                             <label>
                                                 <input
                                                     type="radio"
+                                                    name='form2'
                                                     value="SoupOftheDay"
-                                                    checked={this.state.selectedOption === "SoupOftheDay"}
+                                                    // checked={this.state.selectedOption === "SoupOftheDay"}
                                                     onChange={this.onSoupChange}
                                                 />
                                                 Soup Of the Day
@@ -257,15 +254,16 @@ class SandwichOptions extends Component {
 
                                 <div className='menuOption'>
                                     <h3>Soup Size</h3>
-                                    <form onSubmit={this.sizeFormSubmit}>
+                                    <form onSubmit={this.formSubmit}>
                                         <ul className='center'>
                                             {/* SotD */}
                                             <div className="radio">
                                                 <label>
                                                     <input
                                                         type="radio"
+                                                        name='form3'
                                                         value="HalfBowl"
-                                                        checked={this.state.selectedOption === "HalfBowl"}
+                                                        // checked={this.state.selectedOption === "HalfBowl"}
                                                         onChange={this.onSizeChange}
                                                     />
                                                     Half Bowl
@@ -278,8 +276,9 @@ class SandwichOptions extends Component {
                                                 <label>
                                                     <input
                                                         type="radio"
+                                                        name='form3'
                                                         value="FullBowl"
-                                                        checked={this.state.selectedOption === "FullBowl"}
+                                                        // checked={this.state.selectedOption === "FullBowl"}
                                                         onChange={this.onSizeChange}
                                                     />
                                                     Full Bowl
@@ -294,10 +293,8 @@ class SandwichOptions extends Component {
                         {/* <a href='http://localhost:3000/MainMenu' className='buttonClass'>
                             <button type='submit'>Place Your Order!</button>
                         </a> */}
-                        <a>
-                            <button >Add to cart!</button>
-                        </a>
-                        <a href='http://localhost:3000/MainMen' className='buttonClass'>
+                        <button onClick={this.formSubmit}>add to cart</button>
+                        <a href='/MainMenu' className='buttonClass'>
                             <button type='submit'>Order More!</button>
                         </a>
                 </div>

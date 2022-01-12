@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './OptionsContainer.css'
 
-const orderArray = [];
+let orderArray = [];
 
 class DrinkOptions extends Component {
     constructor(props) {
@@ -10,21 +10,31 @@ class DrinkOptions extends Component {
         this.state = {
             drinkSize: "",
             house: ""
-    }
-        this.onSizeChange = this.onValueChange.bind(this);
-        this.onValueChange = this.onValueChange.bind(this);
-        this.formSubmit = this.formSubmit.bind(this);
+        }
+        this.onSizeChange = this.onSizeChange.bind(this);
+        this.onHouseChange = this.onHouseChange.bind(this);
+        this.submit = this.submit.bind(this);
     }
 
-    onValueChange(event) {
+    onSizeChange(event) {
         this.setState({
-            selectedOption: event.target.value
+            drinkSize: event.target.value
+        });
+        // console.log(event.target.value)
+        // console.log(this.state.drinkSize,"asdasadaasasd")
+
+    }
+    onHouseChange(event) {
+        this.setState({
+            house: event.target.value
         });
     }
 
-    formSubmit(event) {
+    submit(event) {
         event.preventDefault();
-        console.log(this.state.selectedOption)
+        orderArray.push(this.state.drinkSize);
+        orderArray.push(this.state.house);
+        console.log(orderArray);
     }
 
     render() {
@@ -36,55 +46,58 @@ class DrinkOptions extends Component {
                     <h1 className='chosenItem'> Menu Item Chosen </h1>
                 </div>
                 <div className='optionsContainer'>
-                    <form>
-                        <div className='menuOption'>
-                            <h3>What size would you like?</h3>
-                            <form onSubmit={this.formSubmit}>
+                    <div className='menuOption'>
+                        <h3>What size would you like?</h3>
+                        <form onSubmit={this.submit}>
 
-                                {/* small drink */}
-                                <div className="radio">
-                                    <label>
-                                        <input
-                                            type="radio"
-                                            value="SmallDrink"
-                                            checked={this.state.selectedOption === "SmallDrink"}
-                                            onChange={this.onValueChange}
-                                        />
-                                        Small Drink
-                                    </label>
-                                    {/* <li className='center'><button type='radio'>Small Drink</button></li>*/}
-                                </div>
-                                <br />
+                            {/* small drink */}
+                            <div className="radio">
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="form1"
+                                        value="SmallDrink"
+                                        // checked={this.state.selectedOption === "SmallDrink"}
+                                        onChange={this.onSizeChange}
+                                    />
+                                    Small Drink
+                                </label>
+                                {/* <li className='center'><button type='radio'>Small Drink</button></li>*/}
+                            </div>
+                            <br />
 
-                                {/* med drink */}
-                                <div className="radio">
-                                    <label>
-                                        <input
-                                            type="radio"
-                                            value="MediumDrink"
-                                            checked={this.state.selectedOption === "MediumDrink"}
-                                            onChange={this.onValueChange}
-                                        />
-                                        Medium Drink
-                                    </label>
-                                    {/* <li className='center'><button type='radio'>Med Drink</button></li>*/}
-                                </div>
-                                <br />
-                                {/* large drink */}
-                                <div className="radio">
-                                    <label>
-                                        <input
-                                            type="radio"
-                                            value="LargeDrink"
-                                            checked={this.state.selectedOption === "LargeDrink"}
-                                            onChange={this.onValueChange}
-                                        />
-                                        Large Drink
-                                    </label>
-                                    {/* <li className='center'><button type='radio'>Large Drink</button></li>*/}
-                                </div>
-                                <br />
-                            </form>
+                            {/* med drink */}
+                            <div className="radio">
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="form1"
+                                        value="MediumDrink"
+                                        // checked={this.state.selectedOption === "MediumDrink"}
+                                        onChange={this.onSizeChange}
+                                    />
+                                    Medium Drink
+                                </label>
+                                {/* <li className='center'><button type='radio'>Med Drink</button></li>*/}
+                            </div>
+                            <br />
+                            {/* large drink */}
+                            <div className="radio">
+                                <label>
+                                    <input
+                                        type="radio"
+                                        name="form1"
+                                        value="LargeDrink"
+                                        // checked={this.state.selectedOption === "LargeDrink"}
+                                        onChange={this.onSizeChange}
+                                    />
+                                    Large Drink
+                                </label>
+                                {/* <li className='center'><button type='radio'>Large Drink</button></li>*/}
+                            </div>
+                            <br />
+                        </form>
+                        <form onSubmit={this.submit}>
                             <div className='menuOption'>
                                 <h3>For Here? or TO-GO?</h3>
                                 <ul className='center'>
@@ -93,9 +106,10 @@ class DrinkOptions extends Component {
                                         <label>
                                             <input
                                                 type="radio"
+                                                name="form2"
                                                 value="InHouse"
-                                                checked={this.state.selectedOption === "InHouse"}
-                                                onChange={this.onValueChange}
+                                                // checked={this.state.selectedOption2 === "InHouse"}
+                                                onChange={this.onHouseChange}
                                             />
                                             In-House!
                                         </label>
@@ -108,9 +122,10 @@ class DrinkOptions extends Component {
                                         <label>
                                             <input
                                                 type="radio"
+                                                name="form2"
                                                 value="togo"
-                                                checked={this.state.selectedOption === "togo"}
-                                                onChange={this.onValueChange}
+                                                // checked={this.state.selectedOption2 === "togo"}
+                                                onChange={this.onHouseChange}
                                             />
                                             On The Road!
                                         </label>
@@ -119,14 +134,16 @@ class DrinkOptions extends Component {
                                     <br />
                                 </ul>
                             </div>
-                        </div>
-                        <a href='http://localhost:3000/MainMenu' className='buttonClass'>
-                            <button type='submit'>Place Your Order!</button>
-                        </a>
-                        <a href='http://localhost:3000/MainMen' className='buttonClass'>
-                            <button type='submit'>Order More!</button>
-                        </a>
-                    </form>
+                        </form>
+
+                    </div>
+                    <button onClick={this.submit}>add to cart</button>
+                    <a href='/MainMenu' className='buttonClass'>
+                        <button type='submit'>Place Your Order!</button>
+                    </a>
+                    <a href='/MainMenu' className='buttonClass'>
+                        <button type='submit'>Order More!</button>
+                    </a>
                 </div>
 
 
