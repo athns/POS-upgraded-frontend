@@ -67,7 +67,7 @@ class Signup extends Component {
   };
   
   render() {
-    if (this.state.redirect) return <useNavigate to="/login" replace />; // You can have them redirected to profile (your choice)
+    if (this.state.redirect) return <useNavigate to="https://pos-upgraded-frontend.herokuapp.com/login" replace />; // You can have them redirected to profile (your choice)
     
     return (
       <>

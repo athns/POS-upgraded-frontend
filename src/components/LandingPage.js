@@ -48,7 +48,7 @@ class LandingPage extends Component {
 
                                         </a>
                                     </div>
-                                <a href="http://localhost:3000/signup">
+                                <a href="https://pos-upgraded-frontend.herokuapp.com/signup">
                                     <button>Sign Up!</button>
                                 </a>
 

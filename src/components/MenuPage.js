@@ -12,7 +12,7 @@ function addTableNumber() {
 const data = [
     {
         catagory: 'Drink',
-        link: 'http://localhost:3000/drinkOptions',
+        link: 'https://pos-upgraded-frontend.herokuapp.com/drinkOptions',
         drinkImageOne: '',
         drinkImageTwo: '',
         drinkImageThree: '',
@@ -20,7 +20,7 @@ const data = [
     },
     {
         catagory: 'Sandwich',
-        link: 'http://localhost:3000/sandwichOptions',
+        link: 'https://pos-upgraded-frontend.herokuapp.com/sandwichOptions',
         drinkImageOne: '',
         drinkImageTwo: '',
         drinkImageThree: '',
@@ -28,7 +28,7 @@ const data = [
     },
     {
         catagory: 'Desert',
-        link: 'http://localhost:3000/desertOptions',
+        link: 'https://pos-upgraded-frontend.herokuapp.com/desertOptions',
         drinkImageOne: '',
         drinkImageTwo: '',
         drinkImageThree: '',
