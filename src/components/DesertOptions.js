@@ -34,7 +34,7 @@ class DesertOptions extends Component {
                             </ul>
                             </div>
                     
-                        <a href='http://localhost:3000/MainMenu' className='buttonClass'>
+                        <a href='https://pos-upgraded-frontend.herokuapp.com/MainMenu' className='buttonClass'>
                             <button type='submit'>Order More!</button>
                         </a>
                 </div>

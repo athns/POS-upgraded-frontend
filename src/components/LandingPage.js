@@ -27,9 +27,11 @@ class LandingPage extends Component {
                     <div class="hero-body">
                         <div class="container has-text-centered">
                             <div class="column is-6 is-offset-3">
-                                <h1 class="title">
+                                <h1 id='welcome' className='title'>Welcome!</h1>
+                                <h2 className='title'>Rising Cafe Customer.</h2>
+                                <h4 class="title">
                                     Enter Your Party Number!!
-                                </h1>
+                                </h4>
                                 <h2 class="subtitle">
                                 </h2>
                                 <form>
@@ -44,12 +46,12 @@ class LandingPage extends Component {
                                 </form>
                                     <div class='orderStart'>
                                         <a href='https://pos-upgraded-frontend.herokuapp.com/MainMenu'>
-                                            <button type="submit">Start Your Order!</button>
+                                            <button className='button' type="submit">Start Your Order!</button>
 
                                         </a>
                                     </div>
                                 <a href="https://pos-upgraded-frontend.herokuapp.com/signup">
-                                    <button>Sign Up!</button>
+                                    <button className='button'>Sign Up!</button>
                                 </a>
 
                             </div>

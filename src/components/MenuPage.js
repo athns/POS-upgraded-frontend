@@ -82,20 +82,24 @@ const displayCharacters = data.map((a, idx) => {
 
 
 class MenuPage extends Component {
-    state = {
-        menuItems: []
-    }
     constructor(props) {
         super(props);
     }
     componentDidMount() {
         axios.get('http://localhost:3000/foods')
             .then((response) => {
-                response.JSON()
+                // response.JSON()
+            console.log(response.data);  // { foodArray: [ {}, {}, {} ] }
+            const foodArray = response.data.foodArray;
+            // TODO:
+            // - store foodArray in state
+            // - make a function to display foodItems (returns an array of jsx)
+            // - 
 
             })
-            .then(itemList => {
-                this.setState({menuItems: itemList})
+            .then(foodArray => {
+                this.setState({items: foodArray})
+            
             })
             .catch((error) => {
                 console.log('error hitting api', error);
@@ -108,7 +112,8 @@ class MenuPage extends Component {
                 <nav className="navbar no-hover" role="navigation" aria-label="main navigation">
                     <div id="navbarBasicExample" className="navbar-menu">
                         <div className="navbar-item navbar-center">
-                            <h1 className='res-name'> The Coffee Stop</h1>
+                            <h1 className='res-name'>Welcome!</h1>
+                            <p> Place your order Below!</p>
                         </div>
                         <div className="navbar-end">
                             <div className=" totalDiv navbar-item">

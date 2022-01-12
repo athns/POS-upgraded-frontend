@@ -49,7 +49,7 @@ class SandwichOptions extends Component {
                             <button type='submit'>Place Your Order!</button>
                         </a> */}
                     </form>
-                        <a href='http://localhost:3000/MainMenu' className='buttonClass'>
+                        <a href='https://pos-upgraded-frontend.herokuapp.com/MainMenu' className='buttonClass'>
                             <button type='submit'>Order More!</button>
                         </a>
                 </div>
