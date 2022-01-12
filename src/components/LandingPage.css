@@ -19,3 +19,11 @@ html,body {
     padding: 3rem 0;
     line-height: 1.5;
   }
+  .button{
+    border: 0px;
+    border-radius: 30px;
+    margin: 20px;
+  }
+  .welcome{
+    font-family: 'Caveat', cursive;
+  }

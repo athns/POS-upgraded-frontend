@@ -69,12 +69,6 @@
         font-family: 'Spartan', sans-serif;
         font-weight: 700;
     }
-    .seat-number {
-        border: 1px solid #83BCA9;
-        background-color: #83BCA9;
-        padding:15px 15px;
-        font-size: 15px;
-    }
     .order-total {
         margin-top: 5px;
         border: 1px solid #83BCA9;
@@ -86,10 +80,9 @@
         flex-grow: 1;
         flex-direction: column;
         justify-content: center;
-        background-color: #aa5440;
     }
     .navbar-item, .navbar {
-        background-color: #aa5440;
+        background-color: black;
     }
     .res-name {
         font-size: 60px;
