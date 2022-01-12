@@ -126,41 +126,42 @@ class MenuPage extends Component {
                 <script src="../js/bulma.js"></script>
                 <script src="../js/tabs.js"></script>
                 <section className="hero is-info">
-                    <div className=" tab-pane is-active" id="pane-2">
-                        <div className="content">
-                            <div className="columns featured-post is-multiline">
-                                <div className="spaceTab column is-12 post">
-                                    <article className="columns featured">
-                                        <div className="column is-7 post-img ">
-                                            <img src="https://cdn.emk.dev/templates/featured-image.png" alt="" />
-                                        </div>
-                                        <div className="column is-5 featured-content va">
-                                            <div>
-                                                <h3 className="" id='color'></h3>
-                                                <h1 className="title post-title">Menu Item!</h1>
-                                                <p className="post-excerpt">Description! here is some really gud food! eat up! <a href="https://ghost.io">Ghost</a>. </p>
-                                                <br />
-                                                <a href='' className="button is-primary">Customize your order!</a>
+                        {/* <div className=" tab-pane is-active" id="pane-2">
+                            <div className="content">
+                                <div className="columns featured-post is-multiline">
+                                    <div className="spaceTab column is-12 post">
+                                        <article className="columns featured">
+                                            <div className="column is-7 post-img ">
+                                                <img src="https://cdn.emk.dev/templates/featured-image.png" alt="" />
                                             </div>
+                                            <div className="column is-5 featured-content va">
+                                                <div>
+                                                    <h3 className="" id='color'></h3>
+                                                    <h1 className="title post-title">Menu Item!</h1>
+                                                    <p className="post-excerpt">Description! here is some really gud food! eat up! <a href="https://ghost.io">Ghost</a>. </p>
+                                                    <br />
+                                                    <a href='' className="button is-primary">Customize your order!</a>
+                                                </div>
 
-                                        </div>
-                                    </article>
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='menuFlex'>
-                        <a href='' className='menuItem'>
-                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
-                            <p>Hello</p>
-                        </a>
-                        <a href='' className='menuItem'>
-                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
-                        </a>
-                        <a href='' className='menuItem'>
-                            <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
-                        </a>
-                    </div>
+                        <div className='menuFlex'>
+                            <a href='' className='menuItem'>
+                                <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
+                                {this.state[1].description.map((menuItem) => (<p>Hello</p>))}
+                            </a>
+                            <a href='' className='menuItem'>
+                                <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
+                            </a>
+                            <a href='' className='menuItem'>
+                                <img src='/Users/huntermcguire/Desktop/SEI-1025/UNIT-3/deliverables/POS-upgraded-frontend/src/img/StevenUniverse-CoverPhoto-scaled.jpeg'></img>
+                            </a>
+                        </div> */}
+                        {displayCharacters}
 
 
                 </section>
